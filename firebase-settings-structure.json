@@ -1,0 +1,715 @@
+{
+    "main_url": {
+        "id": "main_url",
+        "title": "Main url",
+        "type": "text",
+        "description": "Enter the main url for the app.",
+        "placeholder": "https:\/\/example.com\/",
+        "default": ""
+    },
+    "font_family": {
+        "id": "font_family",
+        "title": "Font",
+        "type": "text",
+        "description": "Enter the name of font family for your application. Search for font name on <a href=\"https:\/\/fonts.google.com\/\" target=\"_blank\">Google Fonts<\/a>.",
+        "default": ""
+    },
+    "border_radius": {
+        "id": "border_radius",
+        "title": "Border Radius",
+        "type": "text",
+        "description": "Enter border radius in points for elements like button.",
+        "default": "0"
+    },
+    "color": {
+        "id": "color",
+        "title": "Text color",
+        "type": "color",
+        "description": "Select the text color for your application.",
+        "default": "#7e8299"
+    },
+    "muted_color": {
+        "id": "muted_color",
+        "title": "Muted text color",
+        "type": "color",
+        "description": "Select the muted text color. Used for headings.",
+        "default": "#8c98a4"
+    },
+    "emphasis_color": {
+        "id": "emphasis_color",
+        "title": "Emphasis text color",
+        "type": "color",
+        "description": "Select the emphasis text color. Used for headings.",
+        "default": "#1e2022"
+    },
+    "primary_color": {
+        "id": "primary_color",
+        "title": "Primary text color",
+        "type": "color",
+        "description": "Select the primary color for your application.",
+        "default": "#2684fe"
+    },
+    "inverse_color": {
+        "id": "inverse_color",
+        "title": "Inverse text color",
+        "type": "color",
+        "description": "Select the inverse color for your application. Inverse color is the color used on dark backgrounds like primary background.",
+        "default": "#ffffff"
+    },
+    "background_color": {
+        "id": "background_color",
+        "title": "Background color",
+        "type": "color",
+        "description": "Select the background color for your application. Defaults to white color.",
+        "default": "#ffffff"
+    },
+    "primary_background_color": {
+        "id": "primary_background_color",
+        "title": "Primary background color",
+        "type": "color",
+        "description": "Select the primary background color for your application. Defaults to \"Primary text color\".",
+        "default": ""
+    },
+    "button_color": {
+        "id": "button_color",
+        "title": "Button text color",
+        "type": "color",
+        "description": "Select the default button color for your application.",
+        "default": "#2684fe"
+    },
+    "button_background_color": {
+        "id": "button_background_color",
+        "title": "Button background color",
+        "type": "color",
+        "description": "Select the default button background color for your application.",
+        "default": "#e9f2ff"
+    },
+    "primary_button_color": {
+        "id": "primary_button_color",
+        "title": "Primary Button text color",
+        "type": "color",
+        "description": "Select the primary button color for your application. Defaults to \"Inverse text color\".",
+        "default": ""
+    },
+    "primary_button_background_color": {
+        "id": "primary_button_background_color",
+        "title": "Primary Button background color",
+        "type": "color",
+        "description": "Select the primary button background color for your application. Defaults to \"Primary background color\".",
+        "default": ""
+    },
+    "enable_onboarding_screen": {
+        "id": "enable_onboarding_screen",
+        "title": "Enable onboarding screen?",
+        "type": "checkbox",
+        "description": "Enable onboarding screen when your aplication is launched.",
+        "default": false
+    },
+    "onboarding_screen_always": {
+        "id": "onboarding_screen_always",
+        "title": "Always show?",
+        "type": "checkbox",
+        "description": "Show onboarding screen everytime the aplication is launched.",
+        "default": false
+    },
+    "onboarding_screen_background_color": {
+        "id": "onboarding_screen_background_color",
+        "title": "Background color",
+        "type": "color",
+        "description": "Select the onboarding screen background color. Defaults to \"Default Background color\".",
+        "default": ""
+    },
+    "onboarding_screens": {
+        "id": "onboarding_screens",
+        "title": "Screens",
+        "type": "repeater",
+        "description": "Configure onboarding screens.",
+        "settings": [
+            {
+                "id": "title",
+                "title": "Title",
+                "type": "text",
+                "description": "Enter the title for this screen.",
+                "placeholder": "Title",
+                "default": ""
+            },
+            {
+                "id": "description",
+                "title": "Description",
+                "type": "text",
+                "description": "Enter the Description for this screen.",
+                "placeholder": "Description",
+                "default": ""
+            },
+            {
+                "id": "image",
+                "title": "Image",
+                "type": "text",
+                "description": "Enter the url for the image on this screen.",
+                "placeholder": "Image url",
+                "default": ""
+            }
+        ],
+        "default": []
+    },
+    "enable_home_screen": {
+        "id": "enable_home_screen",
+        "title": "Enable home screen?",
+        "type": "checkbox",
+        "description": "Enable home screen when your aplication is launched.",
+        "default": false
+    },
+    "home_screen_logo": {
+        "id": "home_screen_logo",
+        "title": "Home screen logo",
+        "type": "text",
+        "description": "Enter the url for the logo on home screen.",
+        "placeholder": "Image url",
+        "default": ""
+    },
+    "home_screen_background_image": {
+        "id": "home_screen_background_image",
+        "title": "Home screen background image",
+        "type": "text",
+        "description": "Enter the url for the background on home screen.",
+        "placeholder": "Image url",
+        "default": ""
+    },
+    "home_screen_background_color": {
+        "id": "home_screen_background_color",
+        "title": "Home screen background color",
+        "type": "color",
+        "description": "Select the background color for home screen. Defaults to \"Background color\"",
+        "default": ""
+    },
+    "home_screen_item_style": {
+        "id": "home_screen_item_style",
+        "title": "Home screen item style",
+        "type": "select",
+        "description": "Select the home screen items style.",
+        "options": {
+            "": "Default",
+            "button": "Button",
+            "button-primary": "Primary Button",
+            "cards": "Cards",
+            "cards-primary": "Cards Primary Button"
+        },
+        "default": ""
+    },
+    "home_screen_items": {
+        "id": "home_screen_items",
+        "title": "Buttons",
+        "type": "repeater",
+        "description": "Configure home screen buttons.",
+        "settings": [
+            {
+                "id": "title",
+                "title": "Title",
+                "type": "text",
+                "description": "Enter the title for this button.",
+                "placeholder": "Title",
+                "default": ""
+            },
+            {
+                "id": "icon",
+                "title": "Icon",
+                "type": "svg-icon",
+                "description": "Type the name of the icon for this item.",
+                "default": {
+                    "group": "default-group",
+                    "name": "home-icon",
+                    "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\"><path d=\"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z\"\/><\/svg>"
+                }
+            },
+            {
+                "id": "target",
+                "title": "Target",
+                "type": "select",
+                "description": "Select the target for this item.",
+                "options": {
+                    "webview": "Main WebView",
+                    "in-app-webview": "In App WebView",
+                    "external": "External Browser\/application"
+                },
+                "default": "webview"
+            },
+            {
+                "id": "url",
+                "title": "Url",
+                "type": "text",
+                "description": "Enter the url for this button.",
+                "placeholder": "https:\/\/example.com\/",
+                "default": ""
+            }
+        ],
+        "default": []
+    },
+    "enable_app_bar": {
+        "id": "enable_app_bar",
+        "title": "Enable app bar?",
+        "type": "checkbox",
+        "description": "Enable app bar in your application.",
+        "default": true
+    },
+    "app_bar_back_button": {
+        "id": "app_bar_back_button",
+        "title": "Show app bar back button?",
+        "type": "checkbox",
+        "description": "Show back button on app bar. Back button is not shows if drawer is enabled.",
+        "default": true
+    },
+    "app_bar_title": {
+        "id": "app_bar_title",
+        "title": "App bar title",
+        "type": "text",
+        "description": "Default title for App bar.",
+        "default": "My App"
+    },
+    "app_bar_web_page_title": {
+        "id": "app_bar_web_page_title",
+        "title": "Web page title on App bar?",
+        "type": "checkbox",
+        "description": "Show web page title on app bar.",
+        "default": false
+    },
+    "app_bar_background_color": {
+        "id": "app_bar_background_color",
+        "title": "App Bar background color",
+        "type": "color",
+        "description": "Select the App bar background color for your application. Defaults to \"Primary background color\".",
+        "default": ""
+    },
+    "app_bar_color": {
+        "id": "app_bar_color",
+        "title": "App Bar text color",
+        "type": "color",
+        "description": "Select the App bar text color for your application. Defaults to \"Inverse text color\".",
+        "default": ""
+    },
+    "enable_drawer": {
+        "id": "enable_drawer",
+        "title": "Enable drawer?",
+        "type": "checkbox",
+        "description": "Enable drawer in your application.",
+        "default": false
+    },
+    "drawer_logo": {
+        "id": "drawer_logo",
+        "title": "Drawer logo",
+        "type": "text",
+        "description": "Enter the url for the image on drawer.",
+        "placeholder": "Image url",
+        "default": ""
+    },
+    "drawer_items": {
+        "id": "drawer_items",
+        "title": "Items",
+        "type": "repeater",
+        "description": "Configure drawer items.",
+        "settings": [
+            {
+                "id": "title",
+                "title": "Title",
+                "type": "text",
+                "description": "Enter the title for this item.",
+                "placeholder": "Title",
+                "default": ""
+            },
+            {
+                "id": "icon",
+                "title": "Icon",
+                "type": "svg-icon",
+                "description": "Type the name of the icon for this item.",
+                "default": {
+                    "group": "default-group",
+                    "name": "home-icon",
+                    "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\"><path d=\"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z\"\/><\/svg>"
+                }
+            },
+            {
+                "id": "target",
+                "title": "Target",
+                "type": "select",
+                "description": "Select the target for this item.",
+                "options": {
+                    "webview": "Main WebView",
+                    "in-app-webview": "In App WebView",
+                    "external": "External Browser\/application"
+                },
+                "default": "webview"
+            },
+            {
+                "id": "url",
+                "title": "Url",
+                "type": "text",
+                "description": "Enter the url for this item.",
+                "placeholder": "https:\/\/example.com\/",
+                "default": ""
+            },
+            {
+                "id": "selected",
+                "title": "Selected item?",
+                "type": "checkbox",
+                "description": "Make this the selected item.",
+                "default": true
+            }
+        ],
+        "default": []
+    },
+    "enable_bottom_bar": {
+        "id": "enable_bottom_bar",
+        "title": "Enable bottom bar?",
+        "type": "checkbox",
+        "description": "Enable bottom bar in your application.",
+        "default": true
+    },
+    "bottom_bar_background_color": {
+        "id": "bottom_bar_background_color",
+        "title": "Bottom bar background color",
+        "type": "color",
+        "description": "Select the background color for your bottom bar. Defaults to \"Default background color\".",
+        "default": ""
+    },
+    "bottom_bar_style": {
+        "id": "bottom_bar_style",
+        "title": "Bottom bar style",
+        "type": "select",
+        "description": "Select the bottom bar items style.",
+        "options": {
+            "": "Default",
+            "simple": "Simple",
+            "simple-without-title": "Simple without title",
+            "simple-active-title": "Simple active title",
+            "pills": "Pills",
+            "pills-round": "Pills round"
+        },
+        "default": ""
+    },
+    "bottom_bar_items": {
+        "id": "bottom_bar_items",
+        "title": "Items",
+        "type": "repeater",
+        "description": "Configure bottom bar items.",
+        "settings": [
+            {
+                "id": "title",
+                "title": "Title",
+                "type": "text",
+                "description": "Enter the title for this item.",
+                "placeholder": "Title",
+                "default": ""
+            },
+            {
+                "id": "icon",
+                "title": "Icon",
+                "type": "svg-icon",
+                "description": "Type the name of the icon for this item.",
+                "default": {
+                    "group": "default-group",
+                    "name": "home-icon",
+                    "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\"><path d=\"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z\"\/><\/svg>"
+                }
+            },
+            {
+                "id": "target",
+                "title": "Target",
+                "type": "select",
+                "description": "Select the target for this item.",
+                "options": {
+                    "webview": "Main WebView",
+                    "in-app-webview": "In App WebView",
+                    "external": "External Browser\/application"
+                },
+                "default": "webview"
+            },
+            {
+                "id": "url",
+                "title": "Url",
+                "type": "text",
+                "description": "Enter the url for this item.",
+                "placeholder": "https:\/\/example.com\/",
+                "default": ""
+            },
+            {
+                "id": "color",
+                "title": "Text color",
+                "type": "color",
+                "description": "Select the text color for this item. Default value depends on the style selected.",
+                "default": ""
+            },
+            {
+                "id": "active_color",
+                "title": "Active text color",
+                "type": "color",
+                "description": "Select the active text color for this item. Default value depends on the style selected.",
+                "default": ""
+            },
+            {
+                "id": "active_background_color",
+                "title": "Active background color",
+                "type": "color",
+                "description": "Select the active background color for this item. Default value depends on the style selected.",
+                "default": ""
+            },
+            {
+                "id": "selected",
+                "title": "Selected item?",
+                "type": "checkbox",
+                "description": "Make this the selected item.",
+                "default": false
+            }
+        ],
+        "default": []
+    },
+    "webview_pull_to_refresh": {
+        "id": "webview_pull_to_refresh",
+        "title": "Enable pull to refresh?",
+        "type": "checkbox",
+        "description": "Enable pull to refresh feature in webview.",
+        "default": true
+    },
+    "webview_clear_cache": {
+        "id": "webview_clear_cache",
+        "title": "Clear webview cache?",
+        "type": "checkbox",
+        "description": "Clear webview cache whenever the application is launched.",
+        "default": false
+    },
+    "webview_vertical_scroll_bar_enabled": {
+        "id": "webview_vertical_scroll_bar_enabled",
+        "title": "Enabled vertical scroll bar?",
+        "type": "checkbox",
+        "description": "Check to enable vertical scroll bar.",
+        "default": true
+    },
+    "webview_horizontal_scroll_bar_enabled": {
+        "id": "webview_horizontal_scroll_bar_enabled",
+        "title": "Enabled horizontal scroll bar?",
+        "type": "checkbox",
+        "description": "Check to enable horizontal scroll bar.",
+        "default": true
+    },
+    "webview_disable_vertical_scroll": {
+        "id": "webview_disable_vertical_scroll",
+        "title": "Disable vertical scroll?",
+        "type": "checkbox",
+        "description": "Check to disable vertical scrolling.",
+        "default": false
+    },
+    "webview_disable_horizontal_scroll": {
+        "id": "webview_disable_horizontal_scroll",
+        "title": "Disable horizontal scroll?",
+        "type": "checkbox",
+        "description": "Check to disable horizontal scrolling.",
+        "default": false
+    },
+    "webview_media_playback_requires_user_gesture": {
+        "id": "webview_media_playback_requires_user_gesture",
+        "title": "Prevent HTML5 media autoplay?",
+        "type": "checkbox",
+        "description": "Check to prevent HTML5 audio or video from autoplaying.",
+        "default": true
+    },
+    "webview_disable_context_menu": {
+        "id": "webview_disable_context_menu",
+        "title": "Disable context menu?",
+        "type": "checkbox",
+        "description": "Check to disable context menu.",
+        "default": false
+    },
+    "webview_allows_link_preview": {
+        "id": "webview_allows_link_preview",
+        "title": "Allow link preview?",
+        "type": "checkbox",
+        "description": "Check to allow link preview on iOS.",
+        "default": false
+    },
+    "webview_support_zoom": {
+        "id": "webview_support_zoom",
+        "title": "Support zoom?",
+        "type": "checkbox",
+        "description": "Check to support zooming using on-screen zoom controls and gestures.",
+        "default": true
+    },
+    "allowed_urls": {
+        "id": "allowed_urls",
+        "title": "Allowed urls",
+        "type": "repeater",
+        "description": "Configure allowed urls in the webview. Urls that dont match these regexes will open in external application.",
+        "settings": [
+            {
+                "id": "regex",
+                "title": "Url regex",
+                "type": "text",
+                "description": "Enter a RegEx pattern to match with the url.",
+                "placeholder": "",
+                "default": ""
+            }
+        ],
+        "default": []
+    },
+    "inject_css": {
+        "id": "inject_css",
+        "title": "CSS code",
+        "type": "code",
+        "language": "css",
+        "description": "Enter css code that will be injected in the webview.",
+        "default": ""
+    },
+    "inject_javascript": {
+        "id": "inject_javascript",
+        "title": "Javascript code",
+        "type": "code",
+        "language": "javascript",
+        "description": "Enter javascript code that will be injected in the webview.",
+        "default": ""
+    },
+    "user_agent_android": {
+        "id": "user_agent_android",
+        "title": "Default user agent Android",
+        "type": "text",
+        "description": "Enter the user agent string for Android devices.",
+        "placeholder": "",
+        "default": ""
+    },
+    "user_agent_ios": {
+        "id": "user_agent_ios",
+        "title": "Default user agent iOS",
+        "type": "text",
+        "description": "Enter the user agent string for iOS devices.",
+        "placeholder": "",
+        "default": ""
+    },
+    "user_agent_regexes": {
+        "id": "user_agent_regexes",
+        "title": "User agent regexes",
+        "type": "repeater",
+        "description": "Configure user agents based on urls patterns.",
+        "settings": [
+            {
+                "id": "regex",
+                "title": "Url regex",
+                "type": "text",
+                "description": "Enter a RegEx pattern to match with the url.",
+                "placeholder": "",
+                "default": ""
+            },
+            {
+                "id": "android",
+                "title": "User agent Android",
+                "type": "text",
+                "description": "Enter the user agent string for Android devices that match this regex.",
+                "placeholder": "",
+                "default": ""
+            },
+            {
+                "id": "ios",
+                "title": "User agent iOS",
+                "type": "text",
+                "description": "Enter the user agent string for Android devices that match this regex.",
+                "placeholder": "",
+                "default": ""
+            }
+        ],
+        "default": []
+    },
+    "app_review_wait_days": {
+        "id": "app_review_wait_days",
+        "title": "Initial wait days",
+        "type": "text",
+        "description": "Enter the number of days to wait initially before requesting app review.",
+        "placeholder": "",
+        "default": 1
+    },
+    "app_review_wait_seconds": {
+        "id": "app_review_wait_seconds",
+        "title": "Wait seconds",
+        "type": "text",
+        "description": "Enter the number of seconds to wait after app launch before requesting app review.",
+        "placeholder": "",
+        "default": 120
+    },
+    "app_review_interval": {
+        "id": "app_review_interval",
+        "title": "Interval between requests",
+        "type": "text",
+        "description": "Enter the number of days to wait between each requests if the user rejects to review app.",
+        "placeholder": "",
+        "default": 7
+    },
+    "app_review_max_requests": {
+        "id": "app_review_max_requests",
+        "title": "Max requests",
+        "type": "text",
+        "description": "Enter the number of times to try requesting app review.",
+        "placeholder": "",
+        "default": 3
+    },
+    "enable_ads": {
+        "id": "enable_ads",
+        "title": "Enable advertisement?",
+        "type": "checkbox",
+        "description": "Enable advertisement in your aplication.",
+        "default": false
+    },
+    "enable_ad_banner_top": {
+        "id": "enable_ad_banner_top",
+        "title": "Enable top banner advertisement?",
+        "type": "checkbox",
+        "description": "Enable banner advertisement at top location in your aplication.",
+        "default": false
+    },
+    "enable_ad_banner_bottom": {
+        "id": "enable_ad_banner_bottom",
+        "title": "Enable bottom banner advertisement?",
+        "type": "checkbox",
+        "description": "Enable banner advertisement at bottom location in your aplication.",
+        "default": false
+    },
+    "ad_banner_id_android": {
+        "id": "ad_banner_id_android",
+        "title": "Android banner Ad ID",
+        "type": "text",
+        "description": "Enter banner Ad ID for Android device.",
+        "placeholder": "",
+        "default": ""
+    },
+    "ad_banner_id_ios": {
+        "id": "ad_banner_id_ios",
+        "title": "iOS banner Ad ID",
+        "type": "text",
+        "description": "Enter banner Ad ID for iOS device.",
+        "placeholder": "",
+        "default": ""
+    },
+    "enable_ad_interstitial": {
+        "id": "enable_ad_interstitial",
+        "title": "Enable interstitial advertisement?",
+        "type": "checkbox",
+        "description": "Enable interstitial advertisement in your aplication.",
+        "default": false
+    },
+    "ad_interstitial_interval": {
+        "id": "ad_interstitial_interval",
+        "title": "Interstitial Ad interval",
+        "type": "text",
+        "description": "Enter interstitial Ad interval in seconds. Ads will be shown only after specific interval on user interaction.",
+        "default": ""
+    },
+    "ad_interstitial_id_android": {
+        "id": "ad_interstitial_id_android",
+        "title": "Android interstitial Ad ID",
+        "type": "text",
+        "description": "Enter interstitial Ad ID for Android device.",
+        "placeholder": "",
+        "default": ""
+    },
+    "ad_interstitial_id_ios": {
+        "id": "ad_interstitial_id_ios",
+        "title": "iOS interstitial Ad ID",
+        "type": "text",
+        "description": "Enter interstitial Ad ID for iOS device.",
+        "placeholder": "",
+        "default": ""
+    }
+}
